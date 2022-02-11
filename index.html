@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- Tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <section class="text-center mt-32">
+            <h1 class="my-8 text-5xl font-medium">Calculator</h1>
+            <div class="w-1/4  mx-auto bg-gray-400 p-1 drop-shadow-lg rounded ">
+                <input class="w-full py-6 sm:w-100 mb-5"  id="textresult" ></input>
+                    <!-- Fast cols  -->
+                    <div  class="grid grid-cols-4 gap-2">
+                        <button  onclick="calculator('(')" class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2 ">(</button>
+                        <button  onclick="calculator(')')" class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">)</button>
+                        <button  onclick="calculator('%')"  class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">%</button>
+                        <button  onclick="deletresult()" class="bg-slate-200 text-base hover:bg-cyan-600 rounded drop-shadow-md my-1 py-2">CE</button>    
+                    </div>
+                       <!-- Scend cols  -->
+                       
+                    <div class="grid grid-cols-4 gap-2">
+                        <button  onclick="calculator('7')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2 ">7</button>
+                        <button  onclick="calculator('8')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">8</button>
+                        <button  onclick="calculator('9')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">9</button>
+                        <button  onclick="calculator('/')"  class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">/</button>
+                    </div>
+                       <!-- Thard cols  -->
+                    <div class="grid grid-cols-4 gap-2">
+                        <button  onclick="calculator('4')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2 ">4</button>
+                        <button  onclick="calculator('5')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">5</button>
+                        <button  onclick="calculator('6')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">6</button>
+                        <button  onclick="calculator('*')"  class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">*</button>
+                    </div>
+                       <!-- For cols  -->
+                    <div class="grid grid-cols-4 gap-2">
+                        <button  onclick="calculator('1')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2 ">1</button>
+                        <button  onclick="calculator('2')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">2</button>
+                        <button  onclick="calculator('3')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">3</button>
+                        <button  onclick="calculator('-')"  class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">-</button>
+                    </div>
+                       <!-- five cols  -->
+                    <div class="grid grid-cols-4 gap-2">
+                        <button  onclick="calculator('0')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2 ">0</button>
+                        <button  onclick="calculator('.')"  class="bg-slate-100 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">.</button>
+                        <button  onclick="totalresultfuncsion()"  class="bg-sky-400 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">=</button>
+                        <button  onclick="calculator('+')" class="bg-slate-200 hover:bg-cyan-600 text-base rounded drop-shadow-md my-1 py-2">+</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
